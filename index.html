@@ -34,8 +34,12 @@
         .links { display: flex; flex-direction: column; gap: 12px; padding: 0 20px; }
         .btn { display: flex; align-items: center; padding: 14px; border-radius: 12px; text-decoration: none; color: white; background: rgba(255,255,255,0.05); border: 1px solid rgba(212,175,55,0.1); transition: 0.3s; }
         .btn:hover { background: rgba(212,175,55,0.15); border-color: var(--gold); transform: scale(1.02); }
+        .btn:active { transform: scale(0.96) !important; background: rgba(212,175,55,0.2) !important; }
         .btn i { font-size: 1.2rem; color: var(--gold); margin-left: 12px; width: 25px; text-align: center; }
         .btn span { flex-grow: 1; text-align: right; font-weight: 600; }
+        .btn-content { flex-grow: 1; text-align: right; }
+        .btn-content .title { font-weight: 600; }
+        .btn-content .subtitle { font-size: 0.75rem; color: #ccc; margin-top: 6px; }
         
         .btn-gold { background: var(--gold); color: black; font-weight: 700; }
         .btn-gold i { color: black; }
@@ -67,7 +71,7 @@
                     <span>الدفع عبر إنستاباي - Instapay</span>
                 </a>
 
-                <a href="https://www.facebook.com/share/v/1B8bEy49QA/" target="_blank" class="btn">
+                <a href="https://www.facebook.com/share/1BjDUcw2TL/" target="_blank" class="btn">
                     <i class="fab fa-facebook-f"></i>
                     <span>فيسبوك - Facebook</span>
                 </a>
@@ -82,9 +86,20 @@
                     <span>تيك توك - TikTok</span>
                 </a>
                 
-                <a href="https://maps.app.goo.gl/XL6rCBqHiEdvRg387?g_st=aw" target="_blank" class="btn">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>موقع العيادة على الخريطة</span>
+                <a href="https://maps.app.goo.gl/XL6rCBqHiEdvRg387?g_st=aw" target="_blank" class="btn" style="align-items: flex-start;">
+                    <i class="fas fa-map-marker-alt" style="margin-top: 4px;"></i>
+                    <div class="btn-content">
+                        <div class="title">موقع العيادة (فرع السنطه)</div>
+                        <div class="subtitle"><i class="far fa-clock"></i> السبت، الأحد، الثلاثاء، الأربعاء، الخميس</div>
+                    </div>
+                </a>
+
+                <a href="https://maps.app.goo.gl/aPtyPhpHHr3y4gmg7" target="_blank" class="btn" style="align-items: flex-start;">
+                    <i class="fas fa-map-marker-alt" style="margin-top: 4px;"></i>
+                    <div class="btn-content">
+                        <div class="title">موقع العيادة (فرع طنطا)</div>
+                        <div class="subtitle"><i class="far fa-clock"></i> الإثنين والأربعاء</div>
+                    </div>
                 </a>
             </div>
             
